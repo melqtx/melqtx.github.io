@@ -4,30 +4,29 @@ body {
     font-family: monospace;
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 100vh;
     margin: 0;
-    padding-top: 5em;
+    padding-top: 7em;
+    padding-left: 17em;
   }
   
   .container {
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
+    
+    max-width: 500px;
+    width: 90%;
     padding: 1em;
   }
   
   header {
     display: flex;
-    justify-content: center;
+   
     align-items: center;
     width: 100%;
     padding: 1em 0;
-    padding-left: 1em; /* Slightly left-align the header */
   }
   
   header a {
-    color: #a64dff; /* Bright purple color */
+    color: #b36fff; /* Bright purple color */
     text-decoration: none;
     margin: 0 0.5em; /* Decreased spacing between elements */
     font-size: 1.2em;
@@ -35,7 +34,7 @@ body {
   }
   
   header a:hover {
-    color: #8000ff; /* Lighter purple color on hover */
+    color: #a64dff; /* Lighter purple color on hover */
   }
   
   main {
