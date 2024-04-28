@@ -23,16 +23,20 @@ body {
     align-items: center;
     width: 100%;
     padding: 1em 0;
+    padding-left: 1em; /* Slightly left-align the header */
   }
   
   header a {
-    color: #9a35ff; /* Bright purple color */
+    color: #a64dff; /* Bright purple color */
     text-decoration: none;
     margin: 0 0.5em; /* Decreased spacing between elements */
     font-size: 1.2em;
     font-weight: bold; /* Bold text */
   }
   
+  header a:hover {
+    color: #8000ff; /* Lighter purple color on hover */
+  }
   
   main {
     flex-grow: 1;
