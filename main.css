@@ -26,14 +26,15 @@ body {
   }
   
   header a {
-    color: rgb(140, 0, 255);
+    color: #b36fff; /* Bright purple color */
     text-decoration: none;
-    margin: 0 1em;
+    margin: 0 0.5em; /* Decreased spacing between elements */
     font-size: 1.2em;
+    font-weight: bold; /* Bold text */
   }
   
   header a:hover {
-    color: #ccc;
+    color: #a64dff; /* Lighter purple color on hover */
   }
   
   main {
