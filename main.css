@@ -47,3 +47,13 @@ body {
  h1 span {
     color: #b36fff;
   } 
+
+  .melano {
+    padding-left: .4em; /* Align the text to the center */
+    margin-top: 20px; /* Add margin space at the top */
+    font-size: 1.2em; /* Adjust the font size for consistency */
+    color: #b36fff;
+    font-size: 1.5em;
+    font-weight: bold; 
+    /* Match the color of elements in the header */
+  }
