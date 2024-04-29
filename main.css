@@ -43,7 +43,7 @@ body {
   background-color: black;
   color: white;
   font-family: 'Space Mono', monospace; /* Apply Space Mono font to the entire document */
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   display: flex;
   flex-direction: column;
@@ -53,9 +53,17 @@ body {
   padding-left: 17em;
 }
 
+.xdot-com {
+
+  padding-top: 2em;
+  font-size: 0.8em;
+}
+
+
+
 .container {
   max-width: 500px;
-  width: 90%;
+  width: 500%;
   padding: 1em;
   padding-top: 10px;
 }
@@ -64,20 +72,24 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1em 0;
+  padding: 1em 10em;
   margin-bottom: 5px;
+  padding-left: 0px;
 }
 
 header a {
-  color: #b36fff;
+  color: #7460D9;
   text-decoration: none;
   margin: 0 0.5em;
   font-size: 1em;
   font-weight: bold;
-}
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 15px;
+  
 
-header a:hover {
-  color: #ca96ff;
 }
 
 main {
@@ -94,9 +106,11 @@ h1 span {
 }
 
 .melano {
-  padding-left: 0.4em;
-  margin-top: 20px;
-  font-size: 1.5em; /* Increase the font size for "melano" */
-  color: #b36fff;
-  font-weight: bold;
+  margin: 0 763.6px 4px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 20px;
+  color: #FFFFFF;
 }
