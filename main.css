@@ -43,3 +43,7 @@ body {
     flex-direction: column;
     justify-content: center;
   }
+
+ h1 span {
+    color: #b36fff;
+  } 
