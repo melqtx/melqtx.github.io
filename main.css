@@ -1,7 +1,33 @@
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 body {
     background-color: black;
     color: white;
     font-family: monospace;
+    font-style: normal;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -55,5 +81,11 @@ body {
     color: #b36fff;
     font-size: 1.5em;
     font-weight: bold; 
+    .space-mono-bold {
+      font-family: "Space Mono", monospace;
+      font-weight: 700;
+      font-style: normal;
+    }
     /* Match the color of elements in the header */
   }
+  
