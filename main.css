@@ -1,91 +1,102 @@
+/* Define Space Mono font styles */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Mono Regular'), local('SpaceMono-Regular'), url(path/to/space-mono-regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
+}
+
+/* Apply Space Mono font to specific classes */
 .space-mono-regular {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-weight: 400;
   font-style: normal;
 }
 
 .space-mono-bold {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
   font-style: normal;
 }
 
 .space-mono-regular-italic {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-weight: 400;
   font-style: italic;
 }
 
 .space-mono-bold-italic {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-weight: 700;
   font-style: italic;
 }
 
-
+/* General styling */
 body {
-    background-color: black;
-    color: white;
-    font-family: monospace;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    padding-top: 7em;
-    padding-left: 17em;
-  }
-  
-  .container {
-    
-    max-width: 500px;
-    width: 90%;
-    padding: 1em;
-  }
-  
-  header {
-    display: flex;
-   
-    align-items: center;
-    width: 100%;
-    padding: 1em 0;
-  }
-  
-  header a {
-    color: #b36fff; /* Bright purple color */
-    text-decoration: none;
-    margin: 0 0.5em; /* Decreased spacing between elements */
-    font-size: 1.2em;
-    font-weight: bold; /* Bold text */
-  }
-  
-  header a:hover {
-    color: #a64dff; /* Lighter purple color on hover */
-  }
-  
-  main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  background-color: black;
+  color: white;
+  font-family: 'Space Mono', monospace; /* Apply Space Mono font to the entire document */
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding-top: 7em;
+  padding-left: 17em;
+}
 
- h1 span {
-    color: #b36fff;
-  } 
+.container {
+  max-width: 500px;
+  width: 90%;
+  padding: 1em;
+  padding-top: 10px;
+}
 
-  .melano {
-    padding-left: .4em; /* Align the text to the center */
-    margin-top: 20px; /* Add margin space at the top */
-    font-size: 1.2em; /* Adjust the font size for consistency */
-    color: #b36fff;
-    font-size: 1.5em;
-    font-weight: bold; 
-    .space-mono-bold {
-      font-family: "Space Mono", monospace;
-      font-weight: 700;
-      font-style: normal;
-    }
-    /* Match the color of elements in the header */
-  }
-  
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1em 0;
+  margin-bottom: 5px;
+}
+
+header a {
+  color: #b36fff;
+  text-decoration: none;
+  margin: 0 0.5em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #ca96ff;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+h1 span {
+  color: #b36fff;
+  font-size: 0.9em;
+}
+
+.melano {
+  padding-left: 0.4em;
+  margin-top: 20px;
+  font-size: 1.5em; /* Increase the font size for "melano" */
+  color: #b36fff;
+  font-weight: bold;
+}
