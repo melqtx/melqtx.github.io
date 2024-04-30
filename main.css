@@ -57,7 +57,13 @@ body {
 
   padding-top: 2em;
   font-size: 0.8em;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2px; /* Adjust the thickness as needed */
+  text-decoration-color: #ffffff; /* Set the color of the underline */
+  text-decoration-style: solid; /* Set the style of the underline (solid, dotted, dashed, etc.) */
+  text-underline-offset: 2px;
 }
+
 
 
 
@@ -114,3 +120,4 @@ h1 span {
   font-size: 20px;
   color: #FFFFFF;
 }
+
