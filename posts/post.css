@@ -51,3 +51,13 @@
     padding-top: 7em;
     padding-left: 17em;
   }
+  
+  /* Change the text color of breadcrumbs */
+.breadcrumbs {
+  color: #7460D9; /* Change to the color you desire */
+}
+
+/* Change the link color of breadcrumbs */
+.breadcrumbs a {
+  color: #7460D9; /* Change to the color you desire */
+}

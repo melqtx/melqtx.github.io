@@ -121,3 +121,27 @@ h1 span {
   color: #FFFFFF;
 }
 
+.breadcrumbs {
+  background-color: #000000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #333;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* Change the text color of breadcrumbs */
+.breadcrumbs {
+  color: #7460D9; /* Change to the color you desire */
+}
+
+/* Change the link color of breadcrumbs */
+.breadcrumbs a {
+  color: #7460D9; /* Change to the color you desire */
+}
