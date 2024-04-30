@@ -58,18 +58,18 @@
 
 ul li::before {
     content: "\2022"; /* Bullet character */
-    color: #7460D9; /* Color of the bullet */
+    color: #7460E0; /* Color of the bullet */
     font-size: 1.2em; /* Adjust size if needed */
     margin-right: 0.5em; /* Spacing between bullet and text */
 }
 
 /* Change the text color of breadcrumbs */
 .breadcrumbs {
-  color: #7460D9; /* Change to the color you desire */
+  color: #7460E0; /* Change to the color you desire */
 }
 
 /* Change the link color of breadcrumbs */
 .breadcrumbs a {
-  color: #7460D9; /* Change to the color you desire */
+  color: #7460E0; /* Change to the color you desire */
 }
 
