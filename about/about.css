@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Space Mono Regular'), local('SpaceMono-Regular'), url(path/to/space-mono-regular.woff2) format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
+  }
+  
+  /* Apply Space Mono font to specific classes */
+  .space-mono-regular {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .space-mono-bold {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .space-mono-regular-italic {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .space-mono-bold-italic {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* General styling */
+  body {
+    background-color: black;
+    color: white;
+    font-family: 'Space Mono', monospace; /* Apply Space Mono font to the entire document */
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding-top: 7em;
+    padding-left: 17em;
+  }
