@@ -51,3 +51,15 @@
     padding-top: 7em;
     padding-left: 17em;
   }
+
+  ul {
+    list-style-type: disc;
+}
+
+ul li::before {
+    content: "\2022"; /* Bullet character */
+    color: #7460D9; /* Color of the bullet */
+    font-size: 1.2em; /* Adjust size if needed */
+    margin-right: 0.5em; /* Spacing between bullet and text */
+}
+
