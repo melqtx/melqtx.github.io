@@ -52,6 +52,16 @@
     padding-left: 17em;
   }
   
+
+  .melano {
+  
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
   /* Change the text color of breadcrumbs */
 .breadcrumbs {
   color: #7460E0; /* Change to the color you desire */
@@ -61,3 +71,5 @@
 .breadcrumbs a {
   color: #7460E0; /* Change to the color you desire */
 }
+
+
