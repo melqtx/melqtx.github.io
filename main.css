@@ -40,6 +40,7 @@
 
 /* General styling */
 body {
+  overflow-x: hidden;
   background-color: black;
   color: white;
   font-family: 'Space Mono', monospace; /* Apply Space Mono font to the entire document */
@@ -52,6 +53,7 @@ body {
   padding-top: 7em;
   padding-left: 17em;
 }
+
 
 .xdot-com {
 

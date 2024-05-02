@@ -58,7 +58,8 @@
     font-family: 'Space Mono', monospace;
     line-height: 1.5; /* Adjust the line height as needed */
     word-wrap: break-word; /* Wrap text to the next line */
-    hyphens: auto; /* Allow hyphenation */
+    hyphens: auto;
+    overflow-x: hidden; /* Allow hyphenation */
 }
 
 p {

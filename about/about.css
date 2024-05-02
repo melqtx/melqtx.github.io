@@ -39,6 +39,7 @@
   
   /* General styling */
   body {
+    overflow-x: hidden;
     background-color: black;
     color: white;
     font-family: 'Space Mono', monospace; /* Apply Space Mono font to the entire document */
