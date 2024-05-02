@@ -1,9 +1,10 @@
 // Get the current page URL
 const currentPage = window.location.pathname;
 const pageNames = {
-  '/index.html': 'Home',
-  '/posts/post.html': 'Post',
-  '/about/about.html': 'About'
+  '/': 'Home',
+  '/posts/post.html': 'Posts',
+  '/about/about.html': 'About',
+  '/posts/blog1.html': 'ocd'
 };
 
 // Function to generate breadcrumbs
@@ -12,11 +13,17 @@ function generateBreadcrumbs() {
   const pathSegments = currentPage.split('/').filter(
       segment => segment !== '');  // Split the URL and remove empty segments
 
-  let breadcrumbPath = '<a href="/">Home</a>';  // Initial breadcrumb for Home
+  let breadcrumbPath = '<a href="/">Home</a>';
 
   for (let i = 1; i < pathSegments.length; i++) {
     const path = `/${pathSegments.slice(0, i + 1).join('/')}`;
-    breadcrumbPath += ` / <a href="${path}">${pageNames[path]}</a>`;
+    let pageName = pageNames[path] || pathSegments[i];
+
+    if (path === '/posts/blog1.html') {
+      breadcrumbPath += ` / <a href="/posts/post.html">Posts</a> / ${pageName}`;
+    } else {
+      breadcrumbPath += ` / <a href="${path}">${pageName}</a>`;
+    }
   }
 
   breadcrumbContainer.innerHTML = breadcrumbPath;
