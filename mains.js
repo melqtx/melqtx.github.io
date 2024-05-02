@@ -4,7 +4,7 @@ const pageNames = {
   '/': 'Home',
   '/posts/post.html': 'Posts',
   '/about/about.html': 'About',
-  '/posts/blog1.html': 'ocd'
+  '/posts/blog1.html': 'welcome'
 };
 
 // Function to generate breadcrumbs
