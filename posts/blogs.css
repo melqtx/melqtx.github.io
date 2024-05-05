@@ -62,6 +62,16 @@
     overflow-x: hidden; /* Allow hyphenation */
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1em; /* Update padding for smaller screens */
+    font-size: 14px; /* Update general font size for smaller screens */
+    padding-top: 5em; /* Adjust top padding for smaller screens */
+    padding-left: 10em; /* Adjust left padding for smaller screens */
+    padding-right: 10em; /* Adjust right padding for smaller screens */
+  }
+}
+
 p {
     margin-bottom: 0.5em; /* Add some space between paragraphs */
 }

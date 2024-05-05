@@ -54,6 +54,16 @@ body {
   padding-left: 17em;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    padding: 1em; /* Updatef padding for smaller screens */
+    font-size: 14px; 
+    padding-top: 5em; 
+    padding-left: 10em; 
+    padding-right: 10em; 
+  }
+}
+
 
 .xdot-com {
 
