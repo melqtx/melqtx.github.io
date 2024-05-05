@@ -52,12 +52,15 @@ body {
   margin: 0;
   padding-top: 7em;
   padding-left: 17em;
+  
 }
 
 @media screen and (max-width: 768px) {
   body {
     padding: 1em;
     font-size: 14px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
