@@ -12,7 +12,7 @@
     src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
   }
   
-  /* Apply Space Mono font to specific classes */
+  
   .space-mono-regular {
     font-family: 'Space Mono', monospace;
     font-weight: 400;
@@ -37,11 +37,11 @@
     font-style: italic;
   }
   
-  /* General styling */
+ 
   body {
     background-color: black;
     color: white;
-    font-family: 'Space Mono', monospace; /* Apply Space Mono font to the entire document */
+    font-family: 'Space Mono', monospace; 
     font-weight: 300;
     font-style: normal;
     display: flex;
@@ -54,12 +54,12 @@
   }
 
   body {
-    font-size: 16px; /* Adjust the font size as needed */
+    font-size: 16px; 
     font-family: 'Space Mono', monospace;
-    line-height: 1.5; /* Adjust the line height as needed */
-    word-wrap: break-word; /* Wrap text to the next line */
+    line-height: 1.5; 
+    word-wrap: break-word; 
     hyphens: auto;
-    overflow-x: hidden; /* Allow hyphenation */
+    overflow-x: hidden; 
 }
 
 @media screen and (max-width: 768px) {
@@ -72,7 +72,7 @@
 }
 
 p {
-    margin-bottom: 0.5em; /* Add some space between paragraphs */
+    margin-bottom: 0.5em; 
 }
 
 
@@ -92,20 +92,19 @@ p {
 }
 
 ul li::before {
-    content: "\2022"; /* Bullet character */
-    color: #7460E0; /* Color of the bullet */
-    font-size: 1.2em; /* Adjust size if needed */
-    margin-right: 0.5em; /* Spacing between bullet and text */
+    content: "\2022"; 
+    color: #7460E0;
+    font-size: 1.2em;
+    margin-right: 0.5em; 
 }
 
-/* Change the text color of breadcrumbs */
+
 .breadcrumbs {
-  color: #7460E0; /* Change to the color you desire */
+  color: #7460E0; 
 }
 
-/* Change the link color of breadcrumbs */
 .breadcrumbs a {
-  color: #7460E0; /* Change to the color you desire */
+  color: #7460E0; 
 }
 
 
