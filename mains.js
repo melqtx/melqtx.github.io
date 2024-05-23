@@ -5,7 +5,8 @@ const pageNames = {
   '/posts/post.html': 'posts',
   '/about/about.html': 'about',
   '/posts/blog1.html': 'welcome',
-  '/posts/blog2.html': 'cicada 3301'
+  '/posts/blog2.html': 'cicada 3301',
+  '/posts/blog3.html': 'the big O'  // Added entry for blog3.html
 };
 
 // Function to generate breadcrumbs
@@ -20,7 +21,8 @@ function generateBreadcrumbs() {
     const path = `/${pathSegments.slice(0, i + 1).join('/')}`;
     let pageName = pageNames[path] || pathSegments[i];
 
-    if (path === '/posts/blog1.html' || path === '/posts/blog2.html') {
+    if (path === '/posts/blog1.html' || path === '/posts/blog2.html' ||
+        path === '/posts/blog3.html') {
       breadcrumbPath += ` / <a href="/posts/post.html">posts</a> / ${pageName}`;
     } else {
       breadcrumbPath += ` / <a href="${path}">${pageName}</a>`;

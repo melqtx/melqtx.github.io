@@ -1,4 +1,4 @@
-/* Font Imports */
+
 @font-face {
   font-family: 'Space Mono';
   font-style: normal;
@@ -13,7 +13,7 @@
   src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
 }
 
-/* Font Classes */
+
 .space-mono-regular {
   font-family: 'Space Mono', monospace;
   font-weight: 400;
@@ -38,7 +38,7 @@
   font-style: italic;
 }
 
-/* General Styles */
+
 body {
   overflow-x: hidden;
   background-color: black;
@@ -72,7 +72,7 @@ body {
   color: #FFFFFF;
 }
 
-/* Breadcrumbs Styles */
+
 .breadcrumbs {
   color: #7460E0;
 }
@@ -86,7 +86,7 @@ body {
   color: #9580FF;
 }
 
-/* Posts Section Styles */
+
 .posts-container {
   margin-top: 2em;
 }
@@ -115,7 +115,7 @@ body {
 
 .post-link {
   color: white;
-  text-decoration: none; /* Remove default underline */
+  text-decoration: none; 
   font-size: 14px;
   font-weight: 500;
   position: relative;
@@ -125,9 +125,9 @@ body {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -1px; /* Adjust to move the underline closer to the text */
+  bottom: -1px; 
   width: 100%;
-  height: 0.5px; /* Adjust to make the underline smaller */
+  height: 0.5px;
   background-color: white;
 }
 
@@ -135,7 +135,7 @@ body {
   color: #9580FF;
 }
 
-/* Blog List Styles */
+
 .blog-list {
   list-style-type: none;
   padding: 0;
