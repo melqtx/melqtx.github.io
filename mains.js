@@ -1,3 +1,7 @@
+// just testing out the terminal settings
+
+
+
 const currentPage = window.location.pathname;
 const pageNames = {
   '/': 'home',
