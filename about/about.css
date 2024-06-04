@@ -51,6 +51,7 @@
     margin: 0;
     padding-top: 7em;
     padding-left: 17em;
+    padding-right: 17em;
   }
 
   @media screen and (max-width: 768px) {
@@ -94,4 +95,21 @@ ul li::before {
 }
 
 
+footer {
+  background-color: #000000;
+  padding: 350px 0; 
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
 
