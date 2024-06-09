@@ -1,7 +1,3 @@
-// just testing out the terminal settings
-
-
-
 const currentPage = window.location.pathname;
 const pageNames = {
   '/': 'home',
@@ -10,7 +6,8 @@ const pageNames = {
   '/posts/blog1.html': 'welcome',
   '/posts/blog2.html': 'cicada 3301',
   '/posts/blog3.html': 'the big O',
-  '/posts/blog4.html': 'delusion'
+  '/posts/blog4.html': 'delusion',
+  '/posts/blog5.html': 'chronicle'
 };
 
 function generateBreadcrumbs() {
@@ -27,7 +24,8 @@ function generateBreadcrumbs() {
       let pageName = pageNames[path] || pathSegments[i];
 
       if (path === '/posts/blog1.html' || path === '/posts/blog2.html' ||
-          path === '/posts/blog3.html' || path === '/posts/blog4.html') {
+          path === '/posts/blog3.html' || path === '/posts/blog4.html' ||
+          path === '/posts/blog5.html') {
         breadcrumbPath +=
             ` / <a href="/posts/post.html">posts</a> / ${pageName}`;
       } else {

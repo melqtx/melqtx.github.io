@@ -1,111 +1,99 @@
 @font-face {
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Space Mono Regular'), local('SpaceMono-Regular'), url(path/to/space-mono-regular.woff2) format('woff2');
-  }
-  
-  @font-face {
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
-  }
-  
-  
-  .space-mono-regular {
-    font-family: 'Space Mono', monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .space-mono-bold {
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .space-mono-regular-italic {
-    font-family: 'Space Mono', monospace;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .space-mono-bold-italic {
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
- 
-  body {
-    background-color: black;
-    color: white;
-    font-family: 'Space Mono', monospace; 
-    font-weight: 300;
-    font-style: normal;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-    padding-top: 7em;
-    padding-left: 30em;
-    padding-right: 30em;
-    padding-bottom: 5em;
-  }
-
-  body {
-    font-size: 16px; 
-    font-family: 'Space Mono', monospace;
-    line-height: 1.5; 
-    word-wrap: break-word; 
-    hyphens: auto;
-    overflow-x: hidden; 
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Space Mono Regular'), local('SpaceMono-Regular'), url(path/to/space-mono-regular.woff2) format('woff2');
 }
 
-@media screen and (max-width: 768px) {
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Space Mono Bold'), local('SpaceMono-Bold'), url(path/to/space-mono-bold.woff2) format('woff2');
+}
+
+.space-mono-regular {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: 'Space Mono', monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2em;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+  hyphens: auto;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 769px) {
   body {
-    padding: 1em;
-    font-size: 14px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 4em;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 
 p {
-    margin-bottom: 0.5em; 
+  margin-bottom: 1.5em;
 }
 
+.melano {
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding-bottom: 1em;
+}
 
-  .melano {
-  
-    display: inline-block;
-    overflow-wrap: break-word;
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
-    font-size: 20px;
-    color: #FFFFFF;
-    padding-bottom: 1.5em;
-  }
-
-  ul {
-    list-style-type: disc;
+ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
 }
 
 ul li::before {
-    content: "\2022"; 
-    color: #7460E0;
-    font-size: 1.2em;
-    margin-right: 0.5em; 
+  content: "\2022";
+  color: #7460E0;
+  font-size: 1.2em;
+  margin-right: 0.5em;
 }
 
-
 .breadcrumbs {
-  color: #7460E0; 
+  color: #7460E0;
 }
 
 .breadcrumbs a {
-  color: #7460E0; 
+  color: #7460E0;
 }
 
 .responsive-image {
@@ -113,18 +101,17 @@ ul li::before {
   height: auto;
 }
 
-
-
 footer {
   background-color: #000000;
-  padding: 70px 0; 
+  padding: 2em 0;
   text-align: center;
+  margin-top: auto;
 }
 
 .footer-content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 0 1em;
 }
 
 .footer-content p {
