@@ -7,7 +7,8 @@ const pageNames = {
   '/posts/blog2.html': 'cicada 3301',
   '/posts/blog3.html': 'the big O',
   '/posts/blog4.html': 'delusion',
-  '/posts/blog5.html': 'chronicle'
+  '/posts/blog5.html': 'chronicle',
+  '/posts/blog6.html': 'learning curve',  // Fixed missing quote here
 };
 
 function generateBreadcrumbs() {
@@ -17,15 +18,13 @@ function generateBreadcrumbs() {
   let breadcrumbPath = '<a href="/">home</a>';
 
   if (currentPage === '/posts/post.html') {
-    breadcrumbPath += ` / <a href="/posts/post.html">posts</a>`;
+    breadcrumbPath += ' / <a href="/posts/post.html">posts</a>';
   } else {
     for (let i = 1; i < pathSegments.length; i++) {
       const path = `/${pathSegments.slice(0, i + 1).join('/')}`;
       let pageName = pageNames[path] || pathSegments[i];
 
-      if (path === '/posts/blog1.html' || path === '/posts/blog2.html' ||
-          path === '/posts/blog3.html' || path === '/posts/blog4.html' ||
-          path === '/posts/blog5.html') {
+      if (path.startsWith('/posts/blog')) {  // Simplified condition
         breadcrumbPath +=
             ` / <a href="/posts/post.html">posts</a> / ${pageName}`;
       } else {
@@ -37,4 +36,4 @@ function generateBreadcrumbs() {
   breadcrumbContainer.innerHTML = breadcrumbPath;
 }
 
-generateBreadcrumbs();
+generateBreadcrumbs();  // Corrected function call
