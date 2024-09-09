@@ -31,8 +31,6 @@ function generateBreadcrumbs() {
         breadcrumbPath += ` / <a href="${path}">${pageName}</a>`;
       }
     }
-  }
-
   breadcrumbContainer.innerHTML = breadcrumbPath;
 }
 
