@@ -1,37 +1,49 @@
 const currentPage = window.location.pathname;
 const pageNames = {
-  '/': 'home',
-  '/posts/post.html': 'posts',
-  '/about/about.html': 'about',
-  '/posts/blog1.html': 'welcome',
-  '/posts/blog2.html': 'cicada 3301',
-  '/posts/blog3.html': 'the big O',
-  '/posts/blog4.html': 'delusion',
-  '/posts/blog5.html': 'chronicle',
-  '/posts/blog6.html': 'learning curve',  // Fixed missing quote here
+  "/": "home",
+  "/posts/post.html": "posts",
+  "/about/about.html": "about",
+  "/posts/blog1.html": "welcome",
+  "/posts/blog2.html": "cicada 3301",
+  "/posts/blog3.html": "the big O",
+  "/posts/blog4.html": "delusion",
+  "/posts/blog5.html": "chronicle",
+  "/posts/blog6.html": "learning curve", // Fixed missing quote here
 };
 
 function generateBreadcrumbs() {
-  const breadcrumbContainer = document.querySelector('.breadcrumbs');
-  const pathSegments = currentPage.split('/').filter(segment => segment !== '');
+  const breadcrumbContainer = document.querySelector(".breadcrumbs");
+
+  // Check if the breadcrumb container exists
+  if (!breadcrumbContainer) {
+    console.error("Breadcrumb container not found.");
+    return;
+  }
+
+  const pathSegments = currentPage
+    .split("/")
+    .filter((segment) => segment !== "");
 
   let breadcrumbPath = '<a href="/">home</a>';
 
-  if (currentPage === '/posts/post.html') {
+  if (currentPage === "/posts/post.html") {
     breadcrumbPath += ' / <a href="/posts/post.html">posts</a>';
   } else {
     for (let i = 1; i < pathSegments.length; i++) {
-      const path = `/${pathSegments.slice(0, i + 1).join('/')}`;
+      const path = `/${pathSegments.slice(0, i + 1).join("/")}`;
       let pageName = pageNames[path] || pathSegments[i];
 
-      if (path.startsWith('/posts/blog')) {  // Simplified condition
-        breadcrumbPath +=
-            ` / <a href="/posts/post.html">posts</a> / ${pageName}`;
+      if (path.startsWith("/posts/blog")) {
+        // Simplified condition
+        breadcrumbPath += ` / <a href="/posts/post.html">posts</a> / ${pageName}`;
       } else {
         breadcrumbPath += ` / <a href="${path}">${pageName}</a>`;
       }
     }
-  breadcrumbContainer.innerHTML = breadcrumbPath;
+  }
+
+  breadcrumbContainer.innerHTML = breadcrumbPath; // Move this line outside the loop
 }
 
-generateBreadcrumbs();  // Corrected function call
+// Call the function to generate breadcrumbs
+generateBreadcrumbs();
