@@ -94,9 +94,8 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1em 10em;
-  margin-bottom: 5px;
-  padding-left: 0px;
+  padding: 1em 10em 1em 0; /* Adjusted padding */
+  margin: 0;
 }
 
 header a {
@@ -110,7 +109,7 @@ header a {
   font-family: 'Space Mono';
   font-weight: 700;
   font-size: 15px;
-  
+  margin: 0;
 }
 /*okay thats it*/
 
