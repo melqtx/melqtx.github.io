@@ -68,11 +68,7 @@ body {
   text-decoration-style: solid;
   text-underline-offset: 3px;
   padding-right: 2px;
-
-}
-
-.xdot-com.clicked {
-  color: #ffffff;
+  color: white; /* Add this line */
 }
 
 .github {
