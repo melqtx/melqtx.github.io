@@ -68,7 +68,7 @@ body {
   text-decoration-style: solid;
   text-underline-offset: 3px;
   padding-right: 2px;
-  color: white; /* Add this line */
+  color: white; 
 }
 
 .github {
@@ -94,7 +94,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1em 10em 1em 0; /* Adjusted padding */
+  padding: 1em 10em 1em 0; 
   margin: 0;
 }
 
