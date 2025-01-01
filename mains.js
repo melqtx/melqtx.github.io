@@ -1,3 +1,4 @@
+//generateBreadcrumbs
 const currentPage = window.location.pathname;
 const pageNames = {
   "/": "home",
